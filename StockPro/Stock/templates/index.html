@@ -1,3 +1,4 @@
+{% extends "template.html" %}
 {% block heading %}
 STOCK
 {% endblock %}
@@ -6,35 +7,27 @@ STOCK
 {% block body %}
 
 <div class="container" style="color: black;">
-<img src="../static/assets/logofull.png" style="margin-top: 20px;">
+<img src="../static/assets/logofull.png" style="margin-top: -55px;">
 <div class="row justify-content-center">
     <div class="col">
         <div class="shadow-lg p-3 mb-3 bg-white rounded justify-content-center mx-auto card-black" style="width: 15rem; ">
             <h1 class="card-title lead">Predictor</h1>
             <div class="card-text" style="color: black;">
-                Click here for the Stock Market Predictor Bot
+                Click here for the Stock Market Predictor
             </div>
-            <a href="" class="btn btn-primary" style="margin-top: 10px; font-size: large; width: 100%;">Predict</a>
+            <a href="/predict" class="btn btn-primary" style="margin-top: 10px; font-size: large; width: 100%;">Predict</a>
         </div>
     </div>
     <div class="col">
         <div class="shadow-lg p-3 mb-3 bg-white rounded justify-content-center mx-auto card-black" style="width: 18rem; ">
-            <h1 class="card-title lead">Market Info</h1>
+            <h1 class="card-title lead">Stock Info</h1>
             <div class="card-text" style="color: black;">
-                Click here to Browse and check up Information on Interested Stocks
+                Click here to look up information on stocks that interest you.
             </div>
-            <a href="" class="btn btn-primary" style="margin-top: 10px; font-size: large; width: 100%;">Browse</a>
-        </div>
-    </div>
-    <div class="col">
-        <div class="shadow-lg p-3 mb-3 bg-white rounded justify-content-center mx-auto card-black" style="width: 15rem; ">
-            <h1 class="card-title lead">Agent</h1>
-            <div class="card-text" style="color: black;">
-                Click here for the Stock Market Trading Agent
-            </div>
-            <a href="" class="btn btn-primary" style="margin-top: 10px; font-size: large; width: 100%;">Trade</a>
+            <a href="/stock" class="btn btn-primary" style="margin-top: 10px; font-size: large; width: 100%;">Browse</a>
         </div>
     </div>
 </div>
 </div>
+
 {% endblock %}
