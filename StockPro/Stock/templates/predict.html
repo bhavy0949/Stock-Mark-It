@@ -7,8 +7,8 @@ MAIN
 {% block body %}
 <div class="container" style="color: black;">
 <div class="row justify-content-center">
-<div class="shadow-lg p-3 mb-5 bg-white rounded card-black" style="width: 70rem; background-color: ghostwhite;">
-    <form style="margin-top: 40px;" action="/predict/" method="POST">
+<div class="shadow-lg p-3 mb-5 bg-white rounded" style="width: 70rem; background-color: ghostwhite;">
+    <form style="margin-top: 40px;" action="/predict" method="POST">
         {% csrf_token %}
         <input name="action" required readonly hidden value="add_card">
         <img class="mb-4" src="../static/assets/logo.png" alt="" height="96">
@@ -45,7 +45,7 @@ MAIN
             <input class="form-control" name="no_days" id="days" type="number" min=30 max=365 value="30">
         </div>
         <textarea hidden id="plot" name="plot"></textarea>  
-        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="check();">Predict Prices</button>
+        <input class="btn btn-lg btn-primary btn-block" onclick="check();" value="Predict Prices"> 
     </form>
     
     <img src="../static/assets/load.gif" height="200px" id="load" hidden style="margin-top: 50px;">

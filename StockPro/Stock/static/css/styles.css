@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../assets/joshua-mayo-HASoyURgPMY-unsplash.jpg');
+    /* background-image: url('../assets/1.png'); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -125,4 +125,14 @@ h1, h2, .text {
     background-color: 
 #c8ccd5  !important;
 
+}
+.login_page_form{
+    margin: 200px auto;
+}
+.loginPage_heading{
+    color: orange;
+}
+.loginPage_con{
+    text-align: center ;
+    margin: 4rem;
 }
