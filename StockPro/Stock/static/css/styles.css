@@ -4,15 +4,14 @@
 }
 
 body {
-    /* background-image: url("../assets/back.jpg"); */
-    /* background-image: url('../../../../1.png'); */
-    background-image: url('../assets/joshua-mayo-HASoyURgPMY-unsplash.jpg');
+
+    /* background-image: url('../assets/1.png'); */
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 100px;
-    /* font-family: cursive;
-     */
+
      font-family: 'Scheherazade New', serif;    
     }
 
@@ -87,7 +86,7 @@ html {
 .center-screen {
     position: absolute;
     left: 50%;
-    /* bring your own prefixes */
+
     transform: translateX(-50%);
 }
 
@@ -102,10 +101,11 @@ h1, h2, .text {
     background-image: url("../assets/fontback.jpg") !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
-    /* color: transparent !important; */
+
     color: #1b2b5f !important;
     font-family: 'Scheherazade New', serif;  
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+
 }
 
 .form-group {
@@ -130,6 +130,17 @@ h1, h2, .text {
 .card-black{
     background-color: 
 #c8ccd5  !important;
-/* #c8ccd5   #848e8f*/
-    /* opacity: .5; */
+
+
 }
+.login_page_form{
+    margin: 200px auto;
+}
+.loginPage_heading{
+    color: orange;
+}
+.loginPage_con{
+    text-align: center ;
+    margin: 4rem;
+}
+

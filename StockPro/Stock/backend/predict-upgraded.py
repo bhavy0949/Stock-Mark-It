@@ -17,7 +17,7 @@ sns.set()
 tf.compat.v1.random.set_random_seed(1234)
 from pandas_datareader import data as pdr
 import os 
-tf.compat.v1.disable_eager_execution()
+
 import yfinance as yf
 yf.pdr_override() # <== that's all it takes :-)
 
@@ -60,7 +60,7 @@ def predict_stock(symbol, period, sim, future):
             )
             self.X = tf.compat.v1.placeholder(tf.float32, (None, None, size))
             self.Y = tf.compat.v1.placeholder(tf.float32, (None, output_size))
-            drop = tf.compat.v1.nn.rnn_cell.DropoutWrapper(
+            drop = tf.contrib.rnn.DropoutWrapper(
                 rnn_cells, output_keep_prob = forget_bias
             )
             self.hidden_layer = tf.compat.v1.placeholder(
