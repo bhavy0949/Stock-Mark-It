@@ -4,11 +4,14 @@
 }
 
 body {
+
     /* background-image: url('../assets/1.png'); */
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 100px;
+
      font-family: 'Scheherazade New', serif;    
     }
 
@@ -83,6 +86,7 @@ html {
 .center-screen {
     position: absolute;
     left: 50%;
+
     transform: translateX(-50%);
 }
 
@@ -97,8 +101,10 @@ h1, h2, .text {
     background-image: url("../assets/fontback.jpg") !important;
     background-clip: text !important;
     -webkit-background-clip: text !important;
+
     color: #1b2b5f !important;
     font-family: 'Scheherazade New', serif;  
+
 
 }
 
@@ -125,6 +131,7 @@ h1, h2, .text {
     background-color: 
 #c8ccd5  !important;
 
+
 }
 .login_page_form{
     margin: 200px auto;
@@ -136,3 +143,4 @@ h1, h2, .text {
     text-align: center ;
     margin: 4rem;
 }
+
