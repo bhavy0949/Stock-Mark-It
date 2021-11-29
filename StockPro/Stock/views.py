@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from Stock.backend.stockinfo import *
 from Stock.backend.predict import *
-from django.contrib.auth import login,logout, authenticate #add this
+from django.contrib.auth import login,logout
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 import sys
